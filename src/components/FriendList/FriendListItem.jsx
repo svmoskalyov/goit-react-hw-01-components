@@ -1,7 +1,6 @@
 import PropTypes from 'prop-types';
 
-const FriendListItem = ({ friend }) => {
-  const { avatar, name, isOnline } = friend;
+const FriendListItem = ({ avatar, name, isOnline }) => {
   console.log('🚀 ~ FriendListItem ~ isOnline', isOnline);
 
   return (

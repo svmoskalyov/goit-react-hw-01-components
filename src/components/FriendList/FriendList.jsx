@@ -13,8 +13,8 @@ const FriendList = ({ friends }) => {
         />
       ))} */}
 
-      {friends.map(friend => (
-        <FriendListItem key={friend.id} friend={friend} />
+      {friends.map(({id, ...rest}) => (
+        <FriendListItem key={id} {...rest} />
       ))}
     </ul>
   );
