@@ -1,10 +1,12 @@
 import PropTypes from 'prop-types';
+import { Box } from 'components/Box';
 import FriendListItem from './FriendListItem';
 
 const FriendList = ({ friends }) => {
   return (
-    <ul className="friend-list">
-      {/* {friends.map(({ avatar, name, isOnline, id }) => (
+    <Box as="section" mx="auto" my={6} width={400} bg="white">
+      <ul>
+        {/* {friends.map(({ avatar, name, isOnline, id }) => (
         <FriendListItem
           key={id}
           avatar={avatar}
@@ -13,10 +15,11 @@ const FriendList = ({ friends }) => {
         />
       ))} */}
 
-      {friends.map(({id, ...rest}) => (
-        <FriendListItem key={id} {...rest} />
-      ))}
-    </ul>
+        {friends.map(({ id, ...rest }) => (
+          <FriendListItem key={id} {...rest} />
+        ))}
+      </ul>
+    </Box>
   );
 };
 
