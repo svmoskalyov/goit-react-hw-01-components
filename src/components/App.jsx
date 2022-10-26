@@ -1,4 +1,5 @@
 import React from 'react';
+import { Box } from 'components/Box';
 
 import Profile from './Profile/Profile';
 import Statistics from './Statistics/Statistics';
@@ -12,7 +13,7 @@ import transactions from '../data/transactions';
 
 const App = () => {
   return (
-    <>
+    <Box maxWidth='1200px' pt={5}>
       <Profile
         username={user.username}
         tag={user.tag}
@@ -23,7 +24,7 @@ const App = () => {
       <Statistics title="Upload stats" stats={data} />
       <FriendList friends={friends} />
       <TransactionHistory items={transactions} />;
-    </>
+    </Box>
   );
 };
 
