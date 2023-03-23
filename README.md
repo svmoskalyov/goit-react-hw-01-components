@@ -1,6 +1,7 @@
 # GoIT React homework
 
 View the homework page by following the link in the section `About`
+
 ![Homepage](./assets/homepage.png)
 
 ## If cloned, it is necessary for the project to work
